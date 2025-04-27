@@ -1,0 +1,79 @@
+#opinion > h3 {
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    margin: 31px 0;
+}
+
+/* thead done  */
+.opinion-holder{
+    
+    margin: 19.2px 0;
+    padding: 25.6px;
+    background: white;
+    border: none;
+    border-radius: 16px;
+}
+.opinion-table{
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box; 
+}
+.question-colom{
+    width: 75%;
+    text-align: left;
+}
+.opinion-colom{
+    width: 25%;
+    text-align: left;
+   
+}
+.opinion-table > thead {
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgb(198, 228, 214);
+    border-radius: 25px;
+
+}
+.opinion-table > thead > tr {
+    background: transparent;
+}
+.opinion-table > thead >tr > th {
+    background: transparent; 
+    padding: 19.2px;
+}
+
+/* tbody starts  */
+.question-data{
+    padding: 19.2px;
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(14, 14, 14);
+    font-size: 12.8px;
+    font-weight: 600;
+    line-height: 15.2px;
+    text-align: left;
+}
+.select-data{
+    padding: 19.2px;
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    
+}
+.select-data > select {
+    box-sizing: border-box;
+    border: 1px solid rgb(14, 14, 14);
+    border-radius: 4px;
+    padding: 8px 11.2px;
+    background: rgb(198, 228, 214);
+    color: rgb(14, 14, 14);
+    font-size: 12.8px;
+    font-weight: 500;
+    line-height: 15.2px;
+    letter-spacing: 0%;
+    text-align: left;
+}

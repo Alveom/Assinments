@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBord</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .poppins {
+        font-family: "Poppins";
+      }
+      .log-info {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 1rem;
+        background: #eff6ff;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body id="bg-color" class="bg-[#EFF6FF] min-h-screen">
+    <div class="py-3 px-16 bg-transparent">
+      <header class="bg-transparent">
+        <nav
+          id="nav"
+          class="bg-white w-full p-3 flex items-center justify-between rounded-lg"
+        >
+          <div class="flex items-center">
+            <img src="assets/logo.png" alt="" />
+
+            <h3 class="px-3 poppins text-2xl">
+              <span class="text-[#00303C] font-light">Dev</span
+              ><span class="text-[#00303C] font-semibold">Board</span>
+            </h3>
+          </div>
+          <div class="flex">
+            <div
+              class="mx-5 flex items-center bg-blue-50 rounded-full py-2 px-4"
+            >
+              <img src="assets/checkbox.png" alt="" />
+              <h3
+                id="complied-task"
+                class="px-4 text-[#1E1E1E] font-extrabold poppins text-2xl"
+              >
+                1000
+              </h3>
+            </div>
+
+            <div id="theme-btn" class="p-2 rounded-full bg-blue-50">
+              <img src="assets/theme-btn.png" alt="" />
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="py-6 flex">
+        <section class="bg-white w-3/4 mr-6 rounded-2xl">
+          <div class="flex p-3">
+            <div
+              class="w-1/4 py-6 px-2 bg-[#F4F7FF] rounded-lg flex items-center"
+            >
+              <div class="bg-white p-3 rounded-full flex items-center">
+                <img class="w-[3vh]" src="assets/checkbox.png" alt="" />
+              </div>
+              <div>
+                <p class="poppins text-[#00303C] text-base font-medium">
+                  Task assigned
+                </p>
+                <p
+                  id="task"
+                  class="poppins text-[#00303C] text-2xl font-extrabold"
+                >
+                  05
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-2/4 mx-2 flex items-center justify-center bg-gradient-to-r from-[#3752FDFF] via-[#6C7FFAFF] to-[#9BA8F8FF] rounded-lg"
+              id="blog"
+            >
+              <div class="px-3">
+                <img class="w-[6vh]" src="assets/board.png" alt="" />
+              </div>
+              <p class="poppins text-white text-lg font-bold">
+                Discover Something <br />
+                New Today!
+              </p>
+            </div>
+            <div class="w-1/4 bg-[#F4F7FF] flex px-2 items-center rounded-lg">
+              <div class="bg-white p-3 rounded-full flex items-center">
+                <img src="assets/calender.png" alt="" />
+              </div>
+              <div class="px-3">
+                <p id="day" class="text-[#00303C] text-lg font-normal"></p>
+                <div>
+                  <p
+                    id="month"
+                    class="text-[#00303C] text-lg font-semibold"
+                  ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- misson sections  -->
+          <div class="pt-14 px-3 pb-3">
+            <div class="grid grid-cols-3 gap-2" id="main-container">
+              <div class="bg-[#F4F7FF] px-5 py-3 rounded-lg contanined-item">
+                <div class="w-24 text-center mb-2">
+                  <h3
+                    class="bg-white text-[#00303C] py-2 px-2 text-center rounded-lg poppins"
+                  >
+                    ShopEase
+                  </h3>
+                </div>
+                <div>
+                  <h3
+                    class="poppins text-[#00303C] text-lg font-semibold mt-4 problem"
+                  >
+                    Fix Mobile Button Issue
+                  </h3>
+                </div>
+                <div
+                  class="bg-white p-2 rounded-lg h-20 overflow-clip poppins my-3 text-base font-light"
+                >
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+                <div
+                  class="flex justify-between py-3 text-[#00303C] items-center"
+                >
+                  <div>
+                    <p class="text-base font-semibold">Deadline</p>
+                    <p class="death-line"></p>
+                  </div>
+                  <button
+                    class="btn bg-[#3752FD] text-white poppins text-base font-bold job-done"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-[#F4F7FF] px-5 py-3 rounded-lg contanined-item">
+                <div class="w-24 text-center mb-2">
+                  <h3
+                    class="bg-white text-[#00303C] py-2 px-2 text-center rounded-lg poppins"
+                  >
+                    ShopEase
+                  </h3>
+                </div>
+                <div>
+                  <h3
+                    class="poppins text-[#00303C] text-lg font-semibold mt-4 problem"
+                  >
+                    Improve Job searching
+                  </h3>
+                </div>
+                <div
+                  class="bg-white p-2 rounded-lg h-20 overflow-clip poppins my-3 text-base font-light"
+                >
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+                <div
+                  class="flex justify-between py-3 text-[#00303C] items-center"
+                >
+                  <div>
+                    <p class="text-base font-semibold">Deadline</p>
+                    <p class="death-line"></p>
+                  </div>
+                  <button
+                    class="btn bg-[#3752FD] text-white poppins text-base font-bold job-done"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-[#F4F7FF] px-5 py-3 rounded-lg contanined-item">
+                <div class="w-24 text-center mb-2">
+                  <h3
+                    class="bg-white text-[#00303C] py-2 px-2 text-center rounded-lg poppins"
+                  >
+                    ShopEase
+                  </h3>
+                </div>
+                <div>
+                  <h3
+                    class="poppins text-[#00303C] text-lg font-semibold mt-4 problem"
+                  >
+                    Integrate OpenAI API
+                  </h3>
+                </div>
+                <div
+                  class="bg-white p-2 rounded-lg h-20 overflow-clip poppins my-3 text-base font-light"
+                >
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+                <div
+                  class="flex justify-between py-3 text-[#00303C] items-center"
+                >
+                  <div>
+                    <p class="text-base font-semibold">Deadline</p>
+                    <p class="death-line"></p>
+                  </div>
+                  <button
+                    class="btn bg-[#3752FD] text-white poppins text-base font-bold job-done"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-[#F4F7FF] px-5 py-3 rounded-lg contanined-item">
+                <div class="w-24 text-center mb-2">
+                  <h3
+                    class="bg-white text-[#00303C] py-2 px-2 text-center rounded-lg poppins"
+                  >
+                    ShopEase
+                  </h3>
+                </div>
+                <div>
+                  <h3
+                    class="poppins text-[#00303C] text-lg font-semibold mt-4 problem"
+                  >
+                    Add new emoji 🤲
+                  </h3>
+                </div>
+                <div
+                  class="bg-white p-2 rounded-lg h-20 overflow-clip poppins my-3 text-base font-light"
+                >
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+                <div
+                  class="flex justify-between py-3 text-[#00303C] items-center"
+                >
+                  <div>
+                    <p class="text-base font-semibold">Deadline</p>
+                    <p class="death-line"></p>
+                  </div>
+                  <button
+                    class="btn bg-[#3752FD] text-white poppins text-base font-bold job-done"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-[#F4F7FF] px-5 py-3 rounded-lg contanined-item">
+                <div class="w-24 text-center mb-2">
+                  <h3
+                    class="bg-white text-[#00303C] py-2 px-2 text-center rounded-lg poppins"
+                  >
+                    ShopEase
+                  </h3>
+                </div>
+                <div>
+                  <h3
+                    class="poppins text-[#00303C] text-lg font-semibold mt-4 problem"
+                  >
+                    Optimize Home page 
+                  </h3>
+                </div>
+                <div
+                  class="bg-white p-2 rounded-lg h-20 overflow-clip poppins my-3 text-base font-light"
+                >
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+                <div
+                  class="flex justify-between py-3 text-[#00303C] items-center"
+                >
+                  <div>
+                    <p class="text-base font-semibold">Deadline</p>
+                    <p class="death-line"></p>
+                  </div>
+                  <button
+                    class="btn bg-[#3752FD] text-white poppins text-base font-bold job-done"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-[#F4F7FF] px-5 py-3 rounded-lg contanined-item">
+                <div class="w-24 text-center mb-2">
+                  <h3
+                    class="bg-white text-[#00303C] py-2 px-2 text-center rounded-lg poppins"
+                  >
+                    ShopEase
+                  </h3>
+                </div>
+                <div>
+                  <h3
+                    class="poppins text-[#00303C] text-lg font-semibold mt-4 problem"
+                  >
+                    Report every thing
+                  </h3>
+                </div>
+                <div
+                  class="bg-white p-2 rounded-lg h-20 overflow-clip poppins my-3 text-base font-light"
+                >
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+                <div
+                  class="flex justify-between py-3 text-[#00303C] items-center"
+                >
+                  <div>
+                    <p class="text-base font-semibold">Deadline</p>
+                    <p class="death-line"></p>
+                  </div>
+                  <button
+                    class="btn bg-[#3752FD] text-white poppins text-base font-bold job-done"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-[#F4F7FF] px-5 py-3 rounded-lg contanined-item">
+                <div class="w-24 text-center mb-2">
+                  <h3
+                    class="bg-white text-[#00303C] py-2 px-2 text-center rounded-lg poppins"
+                  >
+                    ShopEase
+                  </h3>
+                </div>
+                <div>
+                  <h3
+                    class="poppins text-[#00303C] text-lg font-semibold mt-4 problem"
+                  >
+                    Make the background color dynamic
+                  </h3>
+                </div>
+                <div
+                  class="bg-white p-2 rounded-lg h-20 overflow-clip poppins my-3 text-base font-light"
+                >
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+                <div
+                  class="flex justify-between py-3 text-[#00303C] items-center"
+                >
+                  <div>
+                    <p class="text-base font-semibold">Deadline</p>
+                    <p class="death-line"></p>
+                  </div>
+                  <button
+                    class="btn bg-[#3752FD] text-white poppins text-base font-bold job-done"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white w-1/4 rounded-2xl">
+          <div class="flex pb-2 items-center justify-center pr-8 pt-10">
+            <div class="px-4"><img src="assets/activity.png" alt="" /></div>
+            <div class="text-[#00303C] text-lg font-bold poppins">
+              <p>Activity Log</p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <button
+              id="clear-history"
+              class="poppins text-white btn text-center font-semibold text-lg bg-[#3752FD] rounded-lg"
+            >
+              Clear History
+            </button>
+          </div>
+
+          <div id="log" class="pt-6">
+            <p class="log-info hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              sed eligendi molestias aspernatur aliquid totam sequi inventore
+              quam veniam, nesciunt, vero error alias asperiores repellendus
+              quisquam, repellat consectetur optio beatae.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

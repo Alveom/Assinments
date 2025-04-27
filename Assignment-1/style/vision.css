@@ -1,0 +1,169 @@
+.vision-container{
+    display: flex;
+    background: transparent;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+}
+.vision-h3{
+    color: rgb(14, 14, 14);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    letter-spacing: 1.50%;
+    text-align: left;
+}
+.vision-pera{
+    margin: 12px 0px;
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 1.5%;
+    text-align: left;
+}
+.vision-div1{
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 25px 10px;
+    padding: 32px 0;
+    background: rgba(84, 144, 245, 0.2);
+}
+.vision-div1 > img{
+    background: transparent;
+    padding: 15px;
+}
+.vision-div1 > h3{
+    background: transparent;
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 1.5%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.vision-div1 > p{
+    background: transparent;
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.vision-div1 > button{
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    background: rgb(84, 144, 245);
+    color: rgb(255, 255, 255);
+    font-size: 12.8px;
+    font-weight: 600;
+    line-height: 15.2px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 8.8px 16px;
+    margin: 15px;
+}
+
+/* for div 2  */
+.vision-div2{
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 25px 10px;
+    padding: 32px 0;
+    background: rgb(198, 228, 214)
+}
+.vision-div2 > img{
+    background: transparent;
+    padding: 15px;
+}
+.vision-div2 > h3{
+    background: transparent;
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 1.5%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.vision-div2 > p{
+    background: transparent;
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.vision-div2 > button{
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    background: rgb(9, 161, 92);;
+    color: rgb(255, 255, 255);
+    font-size: 12.8px;
+    font-weight: 600;
+    line-height: 15.2px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 8.8px 16px;
+    margin: 15px;
+}
+/* for div 3  */
+.vision-div3{
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 25px 10px;
+    padding: 32px 0;
+    background: rgb(247, 235, 207);
+}
+.vision-div3> img{
+    background: transparent;
+    padding: 15px;
+}
+.vision-div3 > h3{
+    background: transparent;
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 1.5%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.vision-div3 > p{
+    background: transparent;
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.vision-div3 > button{
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    background: rgb(255, 194, 57);
+    color: rgb(255, 255, 255);
+    font-size: 12.8px;
+    font-weight: 600;
+    line-height: 15.2px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 8.8px 16px;
+    margin: 15px;
+}
+
+
+/* FOR QUOTE-BG */

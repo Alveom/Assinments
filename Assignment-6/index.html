@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English জানালা</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .siliguri {
+        font-family: "Hind Siliguri";
+      }
+      .poppins {
+        font-family: "Poppins";
+      }
+      .atma {
+        font-family: "Atma";
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav section work is done  -->
+
+    <header>
+      <nav id="nav-ber" class="hidden">
+        <div class="flex justify-between">
+          <div class="px-16 py-2 flex atma text-xl items-center">
+            <h3>English</h3>
+            <div class="px-0">
+              <img src="assets/logo.png" alt="" />
+            </div>
+            <h3>জানালা</h3>
+          </div>
+          <div class="px-16 flex items-center">
+            <a href="#faq">
+              <div class="">
+                <button
+                  class="btn rounded-lg border-purple-800 border-1 poppins hover:bg-purple-950 hover:text-white"
+                >
+                  <img src="assets/fa-circle-question.png" alt="" />
+
+                  FAQ
+                </button>
+              </div></a
+            >
+            <a href="#learn">
+              <div class="px-2">
+                <button
+                  class="btn rounded-lg border-purple-800 border-1 poppins hover:bg-purple-950 hover:text-white"
+                >
+                  <img src="assets/fa-book-open.png" alt="" />Learn
+                </button>
+              </div></a
+            >
+
+            <div onclick="logout()">
+              <button
+                class="btn rounded-lg border-purple-800 border-1 poppins hover:bg-purple-950 hover:text-white"
+              >
+                <img
+                  src="assets/fa-arrow-right-from-bracket.png"
+                  alt=""
+                />Logout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="h-[1px] bg-gray-300 mb-5"></div>
+      </nav>
+
+      <div class="login-page px-16" id="visiable">
+        <div class="flex items-center justify-between my-24">
+          <div>
+            <h3 class="text-4xl font-semibold poppins">
+              <span class="text-cyan-500">English</span> is Easy!!
+            </h3>
+            <p class="mt-3 atma text-lg text-gray-900">
+              আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+              <br />
+              আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+              <br />
+              যাবে অন্য একটি Level এ
+            </p>
+            <div class="my-7">
+              <input
+                class="border-gray-600 rounded-lg border-1 px-3 py-1"
+                placeholder="Enter Your Name"
+                type="text"
+                id="text"
+              />
+            </div>
+            <div>
+              <input
+                class="border-gray-600 rounded-lg border-1 px-3 py-1"
+                placeholder="Enter Your Pin (123456)"
+                type="password"
+                id="password"
+              />
+            </div>
+
+            <button
+              class="btn bg-[#3D26C7] hover:bg-[#2e1f83] text-white rounded-lg px-6 py-3 my-7"
+              id="login-btn"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <div class="w-[70vh]">
+            <img src="assets/hero-student.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <section id="popup">
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box">
+            <div class="w-full flex justify-center">
+              <img class="w-28" src="assets/rignt.png" alt="" />
+            </div>
+            <h3 class="text-4xl text-center atma font-bold">অভিনন্দন</h3>
+            <p class="py-2 siliguri text-center">চলুন, নতুন কিছু শেখা যাক।</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn text-center bg-purple-950 text-white">
+                  Okey
+                </button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </section>
+    </header>
+
+    <!-- main section work is pending  -->
+    <main class="px-16">
+      <!-- faq sections  -->
+      <section id="faq" class="poppin py-36 hidden">
+        <div class="pt-6 pb-16">
+          <h3 class="text-3xl text-center font-semibold">
+            <span class="text-cyan-500">Frequently</span> Asked Questions
+          </h3>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title font-semibold">
+            1. The difference between var, let, and const?
+          </div>
+          <div class="collapse-content text-sm">
+            var, let, and const are used to declare variables in JavaScript. var
+            is function-scoped and can be redeclared, let is block-scoped and
+            can't be redeclared in the same scope, and const is also
+            block-scoped but can't be reassigned after initialization
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">
+            2. The difference between map(), forEach(), and filter()?
+          </div>
+          <div class="collapse-content text-sm">
+            map(), forEach(), and filter() are array methods. map() creates a
+            new array with transformed elements, forEach() loops through an
+            array but doesn't return anything, and filter() creates a new array
+            with elements that meet a condition.
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">
+            3. Explain arrow functions and how they are different from regular
+            functions
+          </div>
+          <div class="collapse-content text-sm">
+            Arrow functions are a shorter way to write functions using =>. They
+            don't have their own this value, meaning they inherit this from
+            their surrounding scope, unlike regular functions which have their
+            own this.
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">
+            4. How JavaScript Promises work
+          </div>
+          <div class="collapse-content text-sm">
+            JavaScript Promises handle asynchronous operations. A Promise has
+            three states: pending, fulfilled, or rejected. It helps avoid
+            callback hell by allowing .then() for success and .catch() for
+            errors.
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">
+            5. how closures work in JavaScript
+          </div>
+          <div class="collapse-content text-sm">
+            Closures happen when a function remembers variables from its parent
+            scope even after the parent function has finished running. This
+            allows functions to keep private variables and create encapsulated
+            logic.
+          </div>
+        </div>
+      </section>
+      <!-- for lasson  -->
+      <section id="learn" class="poppins py-20 hidden">
+        <div class="text-3xl font-bold text-center">
+          <h3><span class="text-cyan-500">Let's </span> Learn Vocabularies</h3>
+        </div>
+
+        <div id="learn-collection" class="flex gap-3 justify-center py-4"></div>
+      </section>
+      <div id="loading"></div>
+      <section
+        id="words-container"
+        class="p-3 rounded-lg poppins bg-gray-100 text-center hidden"
+      >
+        <h3 class="atma">আপনি এখনো কোন Lesson Select করেন ন</h3>
+        <h3 class="font-semibold text-2xl py-2 atma">
+          একটি Lesson Select করুন।
+        </h3>
+      </section>
+
+      <!-- Open the modal using ID.showModal() method -->
+
+      <dialog id="my_modal_2" class="modal">
+        <div class="modal-box poppins text-xl" id="details-container"></div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+    </main>
+
+    <!-- footer section work is done  -->
+
+    <footer class="pt-28 pb-8">
+      <div class="h-[1px] bg-gray-400 w-full mb-10"></div>
+      <div class="px-16 flex justify-between">
+        <div>
+          <div class="py-2 flex atma text-xl items-center">
+            <h3>English</h3>
+            <div class="px-0">
+              <img src="assets/logo.png" alt="" />
+            </div>
+            <h3>জানালা</h3>
+          </div>
+          <h3 class="font-medium atma">ইংরেজি শিখুন সহজে</h3>
+          <h3>Providing ED-Tech Applications since 2025</h3>
+        </div>
+        <div>
+          <div class="text-center">
+            <h3>Follow us</h3>
+          </div>
+          <div class="flex gap-2">
+            <img src="assets/fb-thumb.png" alt="" /><img
+              src="assets/instagram-thumb.png"
+              alt=""
+            /><img src="assets/youtube-thumb.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins {
+        font-family: "Poppins";
+      }
+    </style>
+  </head>
+  <body class="bg-[#EFF6FF] min-h-screen">
+    <div class="py-3 px-24 bg-transparent">
+      <nav
+        class="bg-white w-full p-3 flex items-center justify-between rounded-lg shadow-sm"
+      >
+        <div class="flex items-center">
+          <img src="assets/logo.png" alt="" />
+
+          <h3 class="px-3 poppins text-2xl">
+            <span class="text-[#00303C] font-light">Dev</span
+            ><span class="text-[#00303C] font-semibold">Board</span>
+          </h3>
+        </div>
+
+        <button
+          id="back"
+          class="btn bg-[#3752FD] text-white poppins text-base font-bold hover:bg-[#2d43d2]"
+        >
+          Back to Desk
+        </button>
+      </nav>
+
+      <h3
+        class="px-4 text-[#1E1E1E] font-extrabold poppins py-4 text-2xl text-center"
+      >
+        Blogs
+      </h3>
+
+      <div
+        class="bg-white w-full p-3 items-center justify-between rounded-lg shadow-sm my-4"
+      >
+        <p class="poppins font-semibold py-4">
+          Q:  What are the different ways to select an element in the DOM?
+        </p>
+        <p class="poppins font-light"><span class="font-semibold pr-4">Ans:</span>Imagine your webpage is a tree, and every part of the page (like buttons, text, images) is a branch or leaf on that tree. The DOM (Document Object Model) is that tree, and JavaScript lets you "grab" these branches/leaves (elements) to change them (like changing colors, text, etc.).</p>
+      </div>
+        <div
+        class="bg-white w-full p-3 items-center justify-between rounded-lg shadow-sm my-4"
+      >
+        <p class="poppins font-semibold py-4">
+          Q: What is the difference between innerHTML, innerText, and textContent ?
+        </p>
+        <p class="poppins font-light"><span class="font-semibold pr-4">Ans:</span>What is innerHTML? → The HTML content inside an element (including tags). <br> 
+What is innerText? → The visible text you see (ignores hidden text/HTML). <br>
+What is textContent? → All text (including hidden) but no HTML tags. <br></p>
+      </div>
+        <div
+        class="bg-white w-full p-3 items-center justify-between rounded-lg shadow-sm my-4"
+      >
+        <p class="poppins font-semibold py-4">
+          Q:   What is event delegation in the DOM?
+        </p>
+        <p class="poppins font-light"><span class="font-semibold pr-4">Ans:</span> Letting a parent element handle events for its children so we don’t add event listeners to every kid.</p>
+      </div>
+        <div
+        class="bg-white w-full p-3 items-center justify-between rounded-lg shadow-sm my-4"
+      >
+        <p class="poppins font-semibold py-4">
+          Q:   What is event bubbling in the DOM?
+        </p>
+        <p class="poppins font-light"><span class="font-semibold pr-4">Ans:</span> When you click something like a button, the click travels up to its parent like the div or page around it.</p>
+      </div>
+        <div
+        class="bg-white w-full p-3 items-center justify-between rounded-lg shadow-sm my-4"
+      >
+        <p class="poppins font-semibold py-4">
+          Q: How do you create, add, and remove elements using JavaScript?
+        </p>
+        <p class="poppins font-light"><span class="font-semibold pr-4">Ans:</span>Create an Element: document.createElement("tagName") → Makes a new element. <br>
+    Add to Page: parentElement.appendChild(newElement) → Slaps it into the DOM (like adding to a list). <br>
+    Remove an Element: element.remove() → Deletes it from the page. <br> </p>
+      </div>
+     
+
+    <script>
+      const back = document.querySelector("#back");
+      back.addEventListener("click", () => {
+        open("index.html");
+      });
+    </script>
+  </body>
+</html>

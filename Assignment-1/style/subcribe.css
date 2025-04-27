@@ -1,0 +1,53 @@
+.bcd{
+    border-radius: 24px;
+    background: rgb(198, 228, 214);
+    padding: 64px 80px;
+    margin: 64px 0px;
+}
+.bcd > div {
+    background: transparent;
+}
+.bcd > div > h3 {
+    color: rgb(14, 14, 14);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    letter-spacing: 0%;
+    text-align: center;
+    background: transparent;
+}
+.bcd > div > p  {
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+    text-align: center;
+    background: transparent;
+    padding: 18px 0;
+}
+
+.input-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+}
+
+.int-sub > input{
+    border: none;
+    border-radius: 16px;
+    padding: 11px 60px;
+}
+.input-cont > button {
+    padding: 11px 30px;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    background: rgb(0, 106, 80);
+    color: rgb(255, 255, 255);
+    font-size: 14.4px;
+    font-weight: 600;
+    line-height: 17.6px;
+    letter-spacing: 0%;
+}

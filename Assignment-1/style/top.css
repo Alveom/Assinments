@@ -1,0 +1,27 @@
+#top {
+    display: flex;
+    flex-direction: row;
+    padding: 19.2px 128px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-h3 {
+    color: rgb(14, 14, 14);
+    font-size: 21.3px;
+    font-weight: 700;
+    line-height: 30.4px;
+    letter-spacing: 1.5%;
+  }
+  .top-btn {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 106, 80);
+    border-radius: 8px;
+    color: rgb(0, 106, 80);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    gap: 48;
+    padding: 12px 24px;
+  }

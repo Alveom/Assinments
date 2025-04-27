@@ -1,0 +1,58 @@
+
+.hero-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  rgb(198, 228, 214);
+    padding: 64px 80px 64px 80px;
+    border: none;
+    border-radius: 24px;
+    margin: 8px 64px 64px 64px;
+}
+
+.hero-text{
+    width: 497.6px;
+    height: 260.8px;
+    background: transparent;
+}
+.hero-text > p {
+    color: rgba(14, 14, 14, 0.5);
+    background: transparent;
+    font-size: 19.2px;
+    font-weight: 500;
+    line-height: 23.2px;
+    letter-spacing: 1.5%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-align: left;
+}
+.hero-text > h3 {
+    color: rgb(14, 14, 14);
+    font-size: 45.5px;
+    font-weight: 700;
+    line-height: 53px;
+    text-align: left;
+    background: transparent;
+}
+.hero-text > button {
+    color: rgb(255, 255, 255);
+    font-size: 14.4px;
+    font-weight: 600;
+    line-height: 17.6px;
+    letter-spacing: 1.50%;
+    text-align: left;
+    border-radius: 8px;
+    background: rgb(0, 106, 80);
+    padding: 13.6px 27.2px;
+    margin-top: 12px;
+    border: none;
+}
+.hero-img{
+    background: transparent;
+}
+.hero-img > img{
+    background: transparent;
+    width: 379.22px;
+    height: 263.37px;
+    margin-top: 15px;
+}

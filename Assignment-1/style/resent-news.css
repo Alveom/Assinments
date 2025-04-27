@@ -1,0 +1,91 @@
+
+
+.resent-h3{
+    color: rgb(14, 14, 14);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.resent-p{
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 19.2px;
+}
+.resent-bg{
+    margin-top: 15px;
+    background: white;
+    border: none;
+    border-radius: 16px;
+    padding: 34.4px;
+}
+.resent-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    background: white;
+}
+.resent-img{
+    width: 40%;
+    border: none;
+    border-radius: 16px;
+    background: white;
+}
+.resent-img > img {
+    border: none;
+    border-radius: 16px;
+    background: white;
+}
+.text-container{
+    width: 60%;
+    background: white;
+    padding: 12px 25.6px;
+}
+.text-container > h3 {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 25.6px;
+    font-weight: 700;
+    line-height: 30.4px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 9.6px 0;
+    background: white;
+}
+.text-container > div {
+    background: white;
+}
+.text-container > div > img{
+    background: white;
+}
+.text-container > p {
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+    text-align: left;
+    background: white;
+}
+.date{
+    margin: 12px 0;
+}
+.text-container > button {
+    border-radius: 8px;
+    background: rgb(0, 106, 80);
+    color: rgb(255, 255, 255);
+    font-size: 14.4px;
+    font-weight: 600;
+    line-height: 17.6px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 10.4px 20.8px;
+    border: none;
+    margin: 15px 0;
+}

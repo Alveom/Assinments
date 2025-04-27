@@ -1,0 +1,98 @@
+.nav-collection {
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-collection {
+  padding: 25px 0;
+}
+.head-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.head-text > h3 {
+  color: rgb(17, 17, 17);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 1.5%;
+}
+.link-collection > a {
+  padding: 32px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.link-collection {
+  list-style: none;
+}
+.link-collection-1 {
+  color: rgb(254, 163, 1);
+}
+.link-collection-2 {
+  color: rgb(1, 172, 253);
+}
+.link-collection-3 {
+  color: rgb(5, 212, 223);
+}
+.link-collection-4 {
+  color: rgb(93, 88, 239);
+}
+.nav-bth > button {
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 8px 40px;
+  border: none;
+}
+.nav-bth > button:hover {
+  background: rgb(216, 137, 2);
+}
+.link-collection-1:hover {
+  color: rgb(254, 163, 1);
+  background: rgb(224, 224, 224);
+  border-radius: 5px;
+}
+.link-collection-2:hover {
+  color: rgb(1, 172, 253);
+  background: rgb(224, 224, 224);
+  border-radius: 5px;
+}
+.link-collection-3:hover {
+  color: rgb(5, 212, 223);
+  background: rgb(224, 224, 224);
+  border-radius: 5px;
+}
+.link-collection-4:hover {
+  color: rgb(93, 88, 239);
+  background: rgb(224, 224, 224);
+  border-radius: 5px;
+}
+.mobile-nav {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .nav-collection {
+    justify-content: space-between;
+    padding: 15px 25px;
+  }
+  .link-collection,
+  .nav-bth,
+  .head-text > h3 {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    width: 6vh;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: rgb(254, 163, 1);
+  }
+}

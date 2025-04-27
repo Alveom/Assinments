@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+      .sora {
+        font-family: "Sora", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      .adlam {
+        font-family: "ADLaM Display", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .add-image {
+        background-image: url("c1-assets/cat-big.png");
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="h-[700px] lg:h-[800px]">
+      <section id="nab-ber">
+        <div class="p-4 flex justify-between items-center lg:justify-around">
+          <div class="flex items-center">
+            <div class="p-2">
+              <img src="c1-assets/logo-header.png" alt="" />
+            </div>
+            <h3
+              class="lg:p-2 lg:sora lg:text-[1.5rem] lg:font-normal lg:flex hidden"
+            >
+              Browse <span class="text-[#FFDC26]">4</span> Pets
+            </h3>
+          </div>
+          <div class="hidden lg:flex">
+            <ul class="flex">
+              <li class="p-2 text-[1.2rem] sora"><a href="">Find a pet</a></li>
+              <li class="p-2 text-[1.2rem] sora"><a href="">Breeds</a></li>
+              <li class="p-2 text-[1.2rem] sora"><a href="">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="gap-1 hidden lg:flex">
+            <img class="p-3" src="c1-assets/bell (1) 1.png" alt="" /><img
+              class="p-3"
+              src="c1-assets/search (2) 1.png"
+              alt=""
+            />
+
+            <button
+              class="px-10 btn text[0.8rem] sora border-[#FFDC26] bg-[#fff]"
+            >
+              Login</button
+            ><button
+              class="px-10 btn bg-[#FFDC26] hover:bg-[#cabc78] text-center text-[0.8rem] sora"
+            >
+              Register
+            </button>
+          </div>
+          <div class="lg:hidden"><img src="c1-assets/bars-3.png" alt="" /></div>
+        </div>
+        <div class="w-full h-[1px] lg:hidden bg-[#111111]"></div>
+      </section>
+
+      <!-- banner section part -->
+      <section class="relative p-0 lg:px-[80px]">
+        <div class="relative z-10 lg:">
+          <h3 class="adlam text-[2.5rem] text-[#111111] md:text-[2rem]">
+            Pamper Your Pet, <br />
+            Because They Deserve <br />
+            the Best
+          </h3>
+          <p
+            class="sora text-[1rem] text-[#111111] py-4 lg:w-[530px] md:text-[0.9rem]"
+          >
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="btn px-10 bg-[#FFDC26] sora md:px-8">
+            Find a pet
+          </button>
+        </div>
+        <div
+          class="absolute top-[285px] lg:top-[-23px] left-0 lg:left-[70px] w-[40vh] lg:w-[120vh]"
+        >
+          <img src="c1-assets/cat-big.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="m-2">
+        <h3
+          class="text-[1.5rem] font-normal adlam text-[#111111] lg:px-[80px] lg:py-[55px]"
+        >
+          Browse By Categories
+        </h3>
+        <div class="lg:px-[80px] grid grid-cols-2 gap-5 lg:flex w-full">
+          <div
+            class="bg-[#F9DF8A] flex items-center text-center flex-col px-[41px] py-[75px] rounded-xl"
+          >
+            <div class="bg-[#ffff] p-[25px] rounded-full">
+              <img src="c1-assets/dog-cartoon.png" alt="" />
+            </div>
+            <h3 class="adlam text-[1rem] p-2">Dog</h3>
+            <p class="sora text-[0.8rem]">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] flex items-center text-center flex-col px-[41px] py-[75px] rounded-xl"
+          >
+            <div class="bg-[#ffff] p-[25px] rounded-full">
+              <img src="c1-assets/fish-cartoon.png" alt="" />
+            </div>
+            <h3 class="adlam text-[1rem] p-2">Fish</h3>
+            <p class="sora text-[0.8rem]">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] flex items-center text-center flex-col px-[41px] py-[75px] rounded-xl"
+          >
+            <div class="bg-[#ffff] p-[25px] rounded-full">
+              <img src="c1-assets/cat-cartoon.png" alt="" />
+            </div>
+            <h3 class="adlam text-[1rem] p-2">Cat</h3>
+            <p class="sora text-[0.8rem]">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] flex items-center text-center flex-col px-[41px] py-[75px] rounded-xl"
+          >
+            <div class="bg-[#ffff] p-[25px] rounded-full">
+              <img src="c1-assets/bird-cartoon.png" alt="" />
+            </div>
+            <h3 class="adlam text-[1rem] p-2">Bird</h3>
+            <p class="sora text-[0.8rem]">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] flex items-center text-center flex-col px-[41px] py-[75px] rounded-xl"
+          >
+            <div class="bg-[#ffff] p-[25px] rounded-full">
+              <img src="c1-assets/mouse-cartoon.png" alt="" />
+            </div>
+            <h3 class="adlam text-[1rem] p-2">Small pat</h3>
+            <p class="sora text-[0.8rem]">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] flex items-center text-center flex-col px-[41px] py-[75px] rounded-xl"
+          >
+            <div class="bg-[#ffff] p-[25px] rounded-full">
+              <img src="c1-assets/rabbit-cartoon.png" alt="" />
+            </div>
+            <h3 class="adlam text-[1rem] p-2">Rabbit</h3>
+            <p class="sora text-[0.8rem]">2 items</p>
+          </div>
+        </div>
+      </section>
+      <!-- the shop section  -->
+      <section class="py-[80px] lg:px-[80px] bg-[#FFF9F4] lg:bg-[#FFF9F4]">
+        <div id="shop_main_div" class="lg:grid lg:grid-cols-2 lg:gap-2">
+          <!-- big section  -->
+
+          <div
+            class="bg-[#F9DF8A] lg:w-[500px] w-[395px] rounded-xl p-[25px] m-2"
+          >
+            <div class="absolute">
+              <h3 class="text-[2.25rem] adlam">T- Shirt For Dogs</h3>
+              <p class="py-[16px] sora text-[1rem]">
+                Discover a world of treats, toys, and <br />
+                essentials handpicked for
+              </p>
+              <button class="btn sora px-[16px] text-[1rem]">Shop Now</button>
+            </div>
+            <div class="relative left-[90px] top-[30px] lg:left-[190px]">
+              <img src="c1-assets/cute-pet-small.png" alt="" />
+            </div>
+          </div>
+          <!-- small section -->
+          <div
+            class="lg:grid lg:grid-cols-3 lg:gap-3 grid grid-cols-2 gap-3 my-2 mx-2"
+          >
+            <div class="flex bg-[#ffffff] rounded-xl items-center">
+              <div class="px-[15px]">
+                <img src="c1-assets/dog-cartoon.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-start">
+                  <img src="c1-assets/star.png" alt="" />
+                  <p class="px-2 sora">4.5</p>
+                </div>
+                <h3 class="sora text-[1rem] font-medium">Pet Bed</h3>
+                <p class="sora">$39.99</p>
+              </div>
+            </div>
+
+            <div class="flex bg-[#ffffff] rounded-xl items-center">
+              <div class="px-[15px]">
+                <img src="c1-assets/fish-cartoon.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-start">
+                  <img src="c1-assets/star.png" alt="" />
+                  <p class="px-2 sora">4.5</p>
+                </div>
+                <h3 class="sora text-[1rem] font-medium">Pet Bed</h3>
+                <p class="sora">$39.99</p>
+              </div>
+            </div>
+            <div class="flex bg-[#ffffff] rounded-xl items-center">
+              <div class="px-[15px]">
+                <img src="c1-assets/bird-cartoon.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-start">
+                  <img src="c1-assets/star.png" alt="" />
+                  <p class="px-2 sora">4.5</p>
+                </div>
+                <h3 class="sora text-[1rem] font-medium">Pet Bed</h3>
+                <p class="sora">$39.99</p>
+              </div>
+            </div>
+            <div class="flex bg-[#ffffff] rounded-xl items-center">
+              <div class="px-[15px]">
+                <img src="c1-assets/rabbit-cartoon.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-start">
+                  <img src="c1-assets/star.png" alt="" />
+                  <p class="px-2 sora">4.5</p>
+                </div>
+                <h3 class="sora text-[1rem] font-medium">Pet Bed</h3>
+                <p class="sora">$39.99</p>
+              </div>
+            </div>
+            <div class="flex bg-[#ffffff] rounded-xl items-center">
+              <div class="px-[15px]">
+                <img src="c1-assets/bird-cartoon.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-start">
+                  <img src="c1-assets/star.png" alt="" />
+                  <p class="px-2 sora">4.5</p>
+                </div>
+                <h3 class="sora text-[1rem] font-medium">Pet Bed</h3>
+                <p class="sora">$39.99</p>
+              </div>
+            </div>
+            <div class="flex bg-[#ffffff] rounded-xl items-center">
+              <div class="px-[15px]">
+                <img src="c1-assets/pet-couch.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-start">
+                  <img src="c1-assets/star.png" alt="" />
+                  <p class="px-2 sora">4.5</p>
+                </div>
+                <h3 class="sora text-[1rem] font-medium">Pet Bed</h3>
+                <p class="sora">$39.99</p>
+              </div>
+            </div>
+            <div class="flex bg-[#ffffff] rounded-xl items-center">
+              <div class="px-[15px]">
+                <img src="c1-assets/fish-cartoon.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-start">
+                  <img src="c1-assets/star.png" alt="" />
+                  <p class="px-2 sora">4.5</p>
+                </div>
+                <h3 class="sora text-[1rem] font-medium">Pet Bed</h3>
+                <p class="sora">$39.99</p>
+              </div>
+            </div>
+            <div class="flex bg-[#ffffff] rounded-xl items-center">
+              <div class="px-[15px]">
+                <img src="c1-assets/pet-couch.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-start">
+                  <img src="c1-assets/star.png" alt="" />
+                  <p class="px-2 sora">4.5</p>
+                </div>
+                <h3 class="sora text-[1rem] font-medium">Pet Bed</h3>
+                <p class="sora">$39.99</p>
+              </div>
+            </div>
+            <div class="bg-[#ffffff] rounded-xl items-center hidden lg:flex">
+              <div class="px-[15px]">
+                <img src="c1-assets/rabbit-cartoon.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-start">
+                  <img src="c1-assets/star.png" alt="" />
+                  <p class="px-2 sora">4.5</p>
+                </div>
+                <h3 class="sora text-[1rem] font-medium">Pet Bed</h3>
+                <p class="sora">$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

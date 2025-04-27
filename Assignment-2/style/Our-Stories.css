@@ -1,0 +1,123 @@
+.gradian {
+  background: url(image),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  padding: 60px 50px;
+  padding-bottom: 0;
+}
+.stories-gap {
+  gap: 15px;
+  margin: 35px 0;
+}
+#Our-Stories > h3 {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.stories-img-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.stories-img > img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.stories-btn {
+  border-radius: 47.93px;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+  padding: 8px;
+  border: none;
+  transform: translateY(-25px);
+  margin-left: 25px;
+}
+.stories-color1 {
+  background: rgb(60, 216, 232);
+}
+.stories-color2 {
+  background: rgb(149, 178, 38);
+}
+.stories-color3 {
+  background: rgb(93, 88, 240);
+}
+
+.stories-container {
+  padding: 25px 0;
+}
+.bg-stories {
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.bg-stories > div > h3 {
+  padding: 15px;
+}
+.fix-width {
+  width: 100vh;
+}
+.stories-container > h3 {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.stories-container > p {
+  color: rgb(102, 102, 102);
+  font-family: Raleway;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.79rem;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 15px;
+}
+.stories-head {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.79rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.stories-btn-out {
+  justify-content: center;
+}
+.stories-btn-out > button {
+  border-radius: 12px;
+  background: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 4px 35px;
+  margin: 15px 0;
+  border: none;
+}
+@media screen and (max-width: 575px) {
+  .hidden {
+    display: none;
+  }
+  .gradian {
+    padding: 6px 5px;
+  }
+  .stories-btn {
+    margin-left: 10px;
+    padding: 6px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 0.9rem;
+    transform: translateY(-18px);
+  }
+}

@@ -1,0 +1,48 @@
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    text-align: left;
+    background: transparent;
+}
+
+.card > h3{
+    margin-top: 25px;
+    background: rgb(255, 255, 255);
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+}
+.card > p {
+    background: white;
+    padding-top: 15px;
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+}
+
+
+.cards-container > div {
+    background: rgb(255, 255, 255);
+    margin: 0 24px;
+    padding: 8px 24px;
+}
+
+
+.cards-box .cards-h3 {
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+}
+.cards-box{
+    margin-bottom: 64px;
+}
